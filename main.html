@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
   <body>
+	  <h1>URL Query String Manipulator</h1>
+
+  <form onsubmit="updateURL(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" required>
+    <br><br>
+
+    <button type="submit" id="button">Submit</button>
+  </form>
+
+  <!-- h3 element to display the updated URL -->
+  <h3 id="url">https://localhost:8080/</h3>
+
+	  
     <script type="text/javascript" src="./script.js">
 </script>
+	  
   </body>
 
 </html>
